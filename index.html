@@ -5,10 +5,162 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/23de391396.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                yellow: "#FECC02",
+                black:"#131313",
+                gray:"#4E4E4E",              
+              },
+              fontFamily:{
+                bebas: ["Bebas Neue", "cursive"],
+                montserrat: ["Montserrat", "sans-serif"],
+              }
+            }
+          }
+        }
+      </script>
     <title>Landing page by Tailwind</title>
 </head>
 <body>
-    <h1>This is a landing Page</h1>
-    
+    <nav class="bg-white fixed top-0 right-0 left-0">
+        <div class="flex justify-between h-20 items-center w-full mx-auto max-w-7xl font-bebas px-5">
+            <h1 class=" text-2xl">Jhaka naka Production</h1>
+            <ul class="flex text-lg gap-7">
+                <li>Services</li>
+                <li>Our Movies</li>
+                <li>About Us</li>
+            </ul>
+        </div>
+    </nav>
+    <section class="bg-red-500 h-screen pt-20 bg-[url('./images/banner.jpg')] bg-cover">
+        <div class="h-full  w-full max-w-7xl mx-auto px-5 flex items-center">
+            <div class="font-bebas ">
+                <h2 class="text-white text-lg">Movie Productoin studio</h2>
+                <h1 class="text-white text-7xl">Films Made to</h1>
+                <h1 class="text-yellow text-7xl">Perfection</h1>
+                <p class="font-montserrat text-white max-w-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, quis iure in blanditiis nobis placeat molestias reprehenderit ipsum delectus</p>
+                <button class="my-auto font-bebas border border-white text-white border-2 py-2 px-3 mt-8 hover:bg-yellow hover:border-yellow hover:text-black transition-all">Discover More</button>
+            </div>
+        </div>
+    </section>
+    <section class="py-40">
+        <div class="border-2 border-black w-full max-w-7xl mx-auto">
+            <div class="p-5 lg:flex mb-10">
+                <div class="w-1/2  bg-red-100 h-[500px] bg-[url('./images/camera-man.jpg')] bg-cover origin-center bg-center flex justify-center items-end ">
+                    <h1 class="text-black text-2xl font-bebas bg-white w-full mx-8 text-center px-5 py-3 rounded-lg -mb-8 shadow-lg">23 YEARS OF EXPERIENCE</h1>
+                </div>              
+                <div class="w-full lg:w-1/2  p-5 font-bebas">
+                    <h2 class="text-lg">About Us</h2>
+                    <h1 class="text-7xl">Fliming Experience</h1>
+                    <h1 class="text-7xl">Just Got better</h1>
+                    <p class="font-montserrat mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, rem dicta facere itaque incidunt, fugiat excepturi blanditiis adipisci autem natus voluptatibus, consectetur beatae repellendus debitis. Provident, expedita ipsum. Harum, amet.</p>
+                    <button class="my-auto font-bebas border border-black text-black border-2 py-2 px-3 mt-6 hover:bg-yellow hover:border-yellow hover:text-white transition-all">Discover More</button>
+                </div>
+            </div>
+            <div class="grid p-5 gap-5 md:grid-cols-3">
+                <div class="">
+                    <div class="bg-black h-1.5 w-full mb-2"></div>
+                    <h1 class="text-5xl font-bebas ">Our vision</h1>
+                    <p class="text-lg font-monserrat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum itaque minus tempore dicta eum aut, delectus magni cum eos beatae!</p>
+                </div>
+                <div class="">
+                    <div class="bg-black h-1.5 w-full mb-2"></div>
+                    <h1 class="text-5xl font-bebas ">Our vision</h1>
+                    <p class="text-lg font-monserrat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum itaque minus tempore dicta eum aut, delectus magni cum eos beatae!</p>
+                </div>
+                <div class="">
+                    <div class="bg-black h-1.5 w-full mb-2"></div>
+                    <h1 class="text-5xl font-bebas ">Our vision</h1>
+                    <p class="text-lg font-monserrat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum itaque minus tempore dicta eum aut, delectus magni cum eos beatae!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray py-10 px-5">
+        <div class="w-full max-w-7xl mx-auto mb-10">
+            <h2 class="font-bebas text-white">Our Movies</h2>
+            <div class="flex justify-between items-center">
+                <h1 class="text-7xl text-white font-bebas">Movie Collection</h1>
+                <button class=" font-bebas border border-white text-white border-2 py-2 px-3 hover:bg-yellow hover:border-yellow hover:text-black transition-all">Discover More</button>
+            </div>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 w-full mx-auto max-w-7xl">
+            <div class="group transition-all border-2 border-white lg:h-[400px] md:h-[550px] h-[700px] p-5">
+                <div class="group transition-all bg-[url('./images/inception.jpg')] h-full w-full bg-cover bg-center flex justify-center items-center">
+                    <h1 class="text-red-500 font-bebas text-4xl hidden group-hover:block">Inception</h1>
+                </div>          
+            </div>
+            <div class="border-2 border-white lg:h-[400px] md:h-[550px] h-[700px] p-5">
+                <div class="group transition-all bg-[url('./images/fractured.jpg')] h-full w-full bg-cover bg-center flex justify-center items-center">
+                    <h1 class="text-red-500 font-bebas text-4xl hidden group-hover:block">Fractured</h1>
+                </div>          
+            </div>
+            <div class="border-2 border-white lg:h-[400px] md:h-[550px] h-[700px] p-5">
+                <div class="group transition-all bg-[url('./images/interstellar.jpg')] h-full w-full bg-cover bg-center flex justify-center items-center">
+                    <h1 class="text-black font-bebas text-4xl hidden group-hover:block">interstellar</h1>
+                </div>          
+            </div>
+            <div class="border-2 border-white lg:h-[400px] md:h-[550px] h-[700px] p-5">
+                <div class="group transition-all bg-[url('./images/tenet.jpg')] h-full w-full bg-cover bg-center flex justify-center items-center">
+                    <h1 class="text-white font-bebas text-4xl hidden group-hover:block">Tenet</h1>
+                </div>          
+            </div>
+        </div>
+    </section>
+    <section class="py-10 px-5">
+        <div class="text-center mb-4">
+            <p class="font-bebas">service</p>
+            <h1 class="text-7xl font-bebas">What we offer</h1>
+        </div>
+        <div class="my-10 grid md:grid-cols-2 lg:grid-cols-4 gap-10 w-full max-w-7xl mx-auto mt-16">
+            <div class="border-2 p-9 text-center">
+                <img class="w-16 mx-auto" src="./images/icons/camera.png" alt="">
+                <h1 class="font-bebas mt-2">Movies Director</h1>
+                <p class="font-montserrat mt-2 text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, qui.</p>
+            </div>
+            <div class="border-2 p-9 text-center">
+                <img class="w-16 mx-auto" src="./images/icons/camera.png" alt="">
+                <h1 class="font-bebas mt-2">Movies Director</h1>
+                <p class="font-montserrat mt-2 text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, qui.</p>
+            </div>
+            <div class="border-2 p-9 text-center">
+                <img class="w-16 mx-auto" src="./images/icons/camera.png" alt="">
+                <h1 class="font-bebas mt-2">Movies Director</h1>
+                <p class="font-montserrat mt-2 text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, qui.</p>
+            </div>
+            <div class="border-2 p-9 text-center">
+                <img class="w-16 mx-auto" src="./images/icons/camera.png" alt="">
+                <h1 class="font-bebas mt-2">Movies Director</h1>
+                <p class="font-montserrat mt-2 text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, qui.</p>
+            </div>
+            <div class="border-2  p-9 text-center">
+                <img class="w-16 mx-auto" src="./images/icons/camera.png" alt="">
+                <h1 class="font-bebas mt-2">Movies Director</h1>
+                <p class="font-montserrat mt-2 text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, qui.</p>
+            </div>
+            <div class="border-2 p-9 text-center">
+                <img class="w-16 mx-auto" src="./images/icons/camera.png" alt="">
+                <h1 class="font-bebas mt-2">Movies Director</h1>
+                <p class="font-montserrat mt-2 text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, qui.</p>
+            </div>
+            <div class="border-2 p-9 text-center">
+                <img class="w-16 mx-auto" src="./images/icons/camera.png" alt="">
+                <h1 class="font-bebas mt-2">Movies Director</h1>
+                <p class="font-montserrat mt-2 text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, qui.</p>
+            </div>
+            <div class="border-2 p-9 text-center">
+                <img class="w-16 mx-auto" src="./images/icons/camera.png" alt="">
+                <h1 class="font-bebas mt-2">Movies Director</h1>
+                <p class="font-montserrat mt-2 text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, qui.</p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
